@@ -9,6 +9,18 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      primary: {
+        light: "#46495e",
+        DEFAULT: "#181b36",
+        dark: "#181b36",
+      },
+      secondary: {
+        light: "#dcf9f7",
+        DEFAULT: "##CDF7F4",
+        dark: "#7b9492",
+      },
+    },
   },
   plugins: [],
 };
