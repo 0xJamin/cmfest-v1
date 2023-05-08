@@ -21,6 +21,11 @@ module.exports = {
         dark: "#7b9492",
       },
     },
+    fontFamily: {
+      heading: ["Space Grotesk", "sans-serif"],
+      body: ["Inter", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
+    },
   },
   plugins: [],
 };
