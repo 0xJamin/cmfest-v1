@@ -6,7 +6,7 @@ const HeroSection = ({ blok }: { blok: HeroType }) => {
   const { label, heading, description, cta_buttons } = blok;
   return (
     <section>
-      <div className="container-fluid max-w-screen-2xl mx-auto px-10">
+      <div className="container-fluid max-w-screen-2xl mx-auto px-10 mt-32">
         <div className="bg-secondary rounded-4xl">
           <div className="container max-w-screen-xl mx-auto p-8">
             <div className="grid grid-cols-7 grid-flow-col gap-4">
