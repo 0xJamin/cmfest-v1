@@ -1,9 +1,13 @@
-import { Button } from "@/components/elements/Button/Button";
-import { storyblokEditable } from "@storyblok/react";
+import Button from "@/components/elements/Button";
+import photo from "../../../public/images/cm1.png";
+import photo2 from "../../../public/images/cm2.png";
+import photo3 from "../../../public/images/cm3.png";
+import Slider from "@/components/modules/Slider";
 
 const HeroSection = ({ blok }: { blok: HeroType }) => {
   console.log(blok);
   const { label, heading, description, cta_buttons } = blok;
+  const sliderPhotos = [photo, photo2, photo3];
   return (
     <section>
       <div className="container-fluid max-w-screen-2xl mx-auto px-10">
@@ -22,7 +26,9 @@ const HeroSection = ({ blok }: { blok: HeroType }) => {
                   ))}
                 </div>
               </div>
-              <div></div>
+              <div>
+                <Slider photos={sliderPhotos} />
+              </div>
             </div>
           </div>
         </div>
