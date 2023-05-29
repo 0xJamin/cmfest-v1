@@ -6,3 +6,9 @@
 body {
   color: #181b36;
 }
+.image-slider {
+  width: 100%;
+  height: 100%;
+}
+.slider-container {
+}
