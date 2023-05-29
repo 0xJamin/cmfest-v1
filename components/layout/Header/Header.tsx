@@ -7,7 +7,7 @@ import { useState } from "react";
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="container-fluid w-full mx-auto  fixed top-0 left-0 bg-primary px-10 shadow-md">
+    <header className=" w-full mx-auto bg-primary px-10 ">
       <div className="container max-w-screen-xl mx-auto">
         <div className="flex items-center justify-between py-4  max-w-screen-2xl">
           <Image src={Logo} alt="CMFest Logo" className="block" />

@@ -67,7 +67,11 @@ export function Slider({ children }: SliderType) {
       <div
         ref={scope}
         className="FMT__container__contents"
-        style={{ display: "flex", flexDirection: "column", borderRadius: "200px", }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          borderRadius: "200px",
+        }}
       >
         {children.map((item, index) => (
           <div key={index} id={`${sliderUUID}_${index}`}>
