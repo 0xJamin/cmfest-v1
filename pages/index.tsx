@@ -10,18 +10,20 @@ import {
 } from "@storyblok/react";
 import Layout from "../components/layout";
 
-export default function Home({ story }: { story: ISbStoryData<PageTemplate> }) {
+export default function Home({
+  story,
+}: {
+  story: ISbStoryData<PageTemplate> | null;
+}) {
   story = useStoryblokState(story);
   const {
     content: { body },
-  } = story;
-  // console.log(body);
+  } = story!;
+
   return (
     <Layout>
       {Array.isArray(body) &&
         body.map((section) => {
-          // console.log(section);
-
           return (
             <div key={section._uid} {...storyblokEditable(section)}>
               <StoryblokComponent blok={section} />
