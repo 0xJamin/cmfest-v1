@@ -9,7 +9,11 @@ html, body {
 }
 main {
   min-height: 100%;
+  padding-bottom: 90px;
 
+}
+footer {
+  min-height: 90px;
 }
 .image-slider {
   width: 100%;
