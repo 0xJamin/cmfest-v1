@@ -13,7 +13,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className=" w-full mx-auto bottom-0 text-white bg-primary p-8 mt-10 fixed">
+    <footer className=" w-full mx-auto bottom-0 text-white bg-primary p-8 mt-10 ">
       <div className="container  max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-2 text-sm font-light">
           <p className="order-last md:order-none">
