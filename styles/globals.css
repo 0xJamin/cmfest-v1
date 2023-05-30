@@ -3,12 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
   color: #181b36;
+  height: 100%;
+}
+main {
+  min-height: 100%;
+
 }
 .image-slider {
   width: 100%;
   height: 100%;
-}
-.slider-container {
 }

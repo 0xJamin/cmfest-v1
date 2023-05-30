@@ -13,16 +13,14 @@ export function Footer() {
   ];
 
   return (
-    <footer className=" w-full mx-auto bottom-0 text-white bg-primary p-8 mt-10">
+    <footer className=" w-full mx-auto bottom-0 text-white bg-primary p-8 mt-10 fixed">
       <div className="container  max-w-screen-xl mx-auto">
-        <div className="flex justify-between text-sm font-light">
-          <div className="">
-            <p className="">
-              &copy; {new Date().getFullYear()} CMFEST Africa. All rights
-              reserved
-            </p>
-          </div>
-          <div className="flex flex-col md:flex-row text-center md:items-center md:justify-between -ml-20">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-2 text-sm font-light">
+          <p className="order-last md:order-none">
+            &copy; {new Date().getFullYear()} CMFEST Africa. All rights reserved
+          </p>
+
+          {/* <div className="flex flex-col md:flex-row text-center md:items-center md:justify-between -ml-20">
             {menu.map((name) => (
               <Link
                 className="mr-0 md:mr-4 text-[#7D7E8C] "
@@ -32,7 +30,7 @@ export function Footer() {
                 <span className="">{name.name}</span>
               </Link>
             ))}
-          </div>
+          </div> */}
           <div className="flex gap-4 ">
             <Link
               href="https://twitter.com/cmfestafrica"
