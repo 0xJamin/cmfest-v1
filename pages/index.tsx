@@ -17,11 +17,16 @@ export default function Home({
 }) {
   story = useStoryblokState(story);
   const {
-    content: { body },
+    content: { body, layout_header, layout_footer },
   } = story!;
 
+  console.log(layout_header[0]);
+  const layoutProps = {
+    header: layout_header[0],
+    footer: layout_footer[0],
+  };
   return (
-    <Layout>
+    <Layout {...layoutProps}>
       {Array.isArray(body) &&
         body.map((section) => {
           return (
