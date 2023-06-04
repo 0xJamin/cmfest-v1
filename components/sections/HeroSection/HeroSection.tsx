@@ -21,7 +21,7 @@ const HeroSection = ({ blok }: { blok: HeroType }) => {
                   {heading}
                 </h1>
                 <p className="mb-5">{description}</p>
-                <div className="mt-10">
+                <div className="mt-10 flex gap-6 flex-col md:flex-row items-center justify-center md:justify-normal">
                   {cta_buttons.map((button) => (
                     <Button key={button._uid} {...button} />
                   ))}
