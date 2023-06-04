@@ -3,7 +3,12 @@ import Footer from "./Footer";
 import Seo from "./Seo";
 import Head from "next/head";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+type LayoutProps = {
+  header: Header;
+  footer: Footer;
+  children: React.ReactNode;
+};
+export default function Layout({ header, children, footer }: LayoutProps) {
   const seo = {
     title: "CMFest Africa 23",
     description: "CMFest website for the festival",
@@ -16,9 +21,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <Seo seo={seo} />
       </Head>
-      <Header />
+      <Header {...header} />
       <main>{children}</main>
-      <Footer />
+      <Footer {...footer} />
     </>
   );
 }

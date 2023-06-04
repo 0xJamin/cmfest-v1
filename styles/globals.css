@@ -3,10 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
   color: #181b36;
+  height: 100%;
+}
+main {
+  min-height: calc(100% - 90px);;
+  padding-bottom: 90px;
+}
+footer {
+  min-height: 90px;
+
+}
+#__next {
+  height: calc(100% - 150px);
 }
 .image-slider {
-  width: 384px;
-  height: 481px;
+  width: 100%;
+  height: 100%;
 }
+

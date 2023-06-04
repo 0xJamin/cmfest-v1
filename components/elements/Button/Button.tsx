@@ -6,9 +6,9 @@ export function Button({ url, label, style, type }: ElementLinkType) {
     <Link
       href={url}
       className={clsx({
-        "bg-primary px-10 py-4 rounded-full text-white border-solid border border-primary text-sm font-bold":
+        "bg-primary px-7 py-3 rounded-full text-white border-solid border border-primary text-sm font-medium":
           style === "primary",
-        "px-7 py-3 border-solid rounded-full border border-primary":
+        " px-7 py-3 rounded-full border-solid border text-sm font-medium border-primary":
           style === "outline",
       })}
       target={type === "external" ? "_blank" : "_self"}

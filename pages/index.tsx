@@ -10,18 +10,25 @@ import {
 } from "@storyblok/react";
 import Layout from "../components/layout";
 
-export default function Home({ story }: { story: ISbStoryData<PageTemplate> }) {
+export default function Home({
+  story,
+}: {
+  story: ISbStoryData<PageTemplate> | null;
+}) {
   story = useStoryblokState(story);
   const {
-    content: { body },
-  } = story;
-  // console.log(body);
+    content: { body, layout_header, layout_footer },
+  } = story!;
+
+  console.log(layout_header[0]);
+  const layoutProps = {
+    header: layout_header[0],
+    footer: layout_footer[0],
+  };
   return (
-    <Layout>
+    <Layout {...layoutProps}>
       {Array.isArray(body) &&
         body.map((section) => {
-          // console.log(section);
-
           return (
             <div key={section._uid} {...storyblokEditable(section)}>
               <StoryblokComponent blok={section} />
