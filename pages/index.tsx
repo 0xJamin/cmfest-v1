@@ -20,7 +20,6 @@ export default function Home({
     content: { body, layout_header, layout_footer },
   } = story!;
 
-  console.log(layout_header[0]);
   const layoutProps = {
     header: layout_header[0],
     footer: layout_footer[0],
@@ -35,7 +34,6 @@ export default function Home({
             </div>
           );
         })}
-      {/* <StoryblokComponent blok={story.content} /> */}
     </Layout>
   );
 }

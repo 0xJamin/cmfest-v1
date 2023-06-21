@@ -33,9 +33,7 @@ export function Modal({ children, heading }: ModalType) {
           className="absolute top-0 w-full h-full left-0 -z-10"
         />
         {/* Modal header */}
-        <h2 className="font-heading text-4xl text-primary mt-4 mb-8">
-          {heading}
-        </h2>
+        <h2 className="font-heading text-4xl text-primary mb-8">{heading}</h2>
         {/* Modal Body */}
         <div className="hr" />
         <div>{children}</div>
