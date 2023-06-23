@@ -12,7 +12,7 @@ export function Modal({ children, heading, onModalClose }: ModalType) {
         id="backdrop"
         onClick={onModalClose}
       />
-      <div className="bg-white overflow-hidden absolute z-50 top-1/3 left-1/3 py-20 px-44 rounded-3xl min-w-fit">
+      <div className="bg-white overflow-hidden absolute z-50 top-1/3 left-1/4 right-1/4 py-20 px-44 rounded-3xl min-w-fit">
         <button className="absolute top-10 right-10" onClick={onModalClose}>
           <Image src={Close} alt="close Icon" />
         </button>
