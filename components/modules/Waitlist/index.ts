@@ -1,3 +1,3 @@
-import { Waitlist } from "./Waitlist";
+import { WaitList } from "./WaitList";
 
-export default Waitlist;
+export default WaitList;

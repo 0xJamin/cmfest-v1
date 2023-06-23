@@ -6,14 +6,14 @@ import photo3 from "@/public/images/cm4.png";
 import photo4 from "@/public/images/cm5.png";
 import Slider from "@/components/modules/Slider";
 import ImageSlide from "@/components/elements/ImageSlide";
-import Waitlist from "@/components/modules/Waitlist";
+import WaitList from "@/components/modules/WaitList";
 
 const HeroSection = ({ blok }: { blok: HeroType }) => {
   const { label, heading, description, cta_buttons } = blok;
   const sliderPhotos = [photo, photo2, photo3, photo4];
   const [isWaitlistOpen, setWaitlist] = useState(false);
   const triggerWaitlist = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setWaitlist(true);
+    setWaitlist(!isWaitlistOpen);
   };
   return (
     <section>
@@ -36,7 +36,9 @@ const HeroSection = ({ blok }: { blok: HeroType }) => {
                     />
                   ))}
                 </div>
-                <Waitlist />
+                {isWaitlistOpen && (
+                  <WaitList handleModalClose={triggerWaitlist} />
+                )}
               </div>
               <div className="hidden lg:block col-span-3">
                 <Slider>

@@ -4,15 +4,16 @@ import Shapes from "@/public/Shapes.svg";
 import WeShare from "@/public/WeShare.svg";
 import bgImage from "@/public/images/bg-white.png";
 import Image from "next/image";
-export function Modal({ children, heading }: ModalType) {
+export function Modal({ children, heading, onModalClose }: ModalType) {
   return (
     <div>
       <div
         className="h-screen bg-primary opacity-80 overflow-hidden fixed z-30 h- w-full top-0 left-0"
         id="backdrop"
+        onClick={onModalClose}
       />
-      <div className="bg-white overflow-hidden absolute z-50 top-1/4 left-1/4 py-20 px-44 rounded-3xl min-w-fit">
-        <button className="absolute top-10 right-10">
+      <div className="bg-white overflow-hidden absolute z-50 top-1/3 left-1/3 py-20 px-44 rounded-3xl min-w-fit">
+        <button className="absolute top-10 right-10" onClick={onModalClose}>
           <Image src={Close} alt="close Icon" />
         </button>
         <Image
