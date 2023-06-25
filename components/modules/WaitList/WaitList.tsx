@@ -60,7 +60,7 @@ export function WaitList({ handleModalClose }: WaitListType) {
                 )}
                 <label
                   htmlFor="fullName"
-                  className={`block text-sm mb-2 ${
+                  className={`block text-sm text-left mb-2 ${
                     errors.fullName && touched.fullName
                       ? "text-red-400"
                       : "text-primary"
@@ -83,7 +83,7 @@ export function WaitList({ handleModalClose }: WaitListType) {
               <div className="w-full mt-4">
                 <label
                   htmlFor="name"
-                  className={`block text-sm mb-2 ${
+                  className={`block text-sm text-left mb-2 ${
                     errors.email && touched.email
                       ? "text-red-400"
                       : "text-primary"

@@ -12,7 +12,7 @@ export function Modal({ children, heading, onModalClose }: ModalType) {
         id="backdrop"
         onClick={onModalClose}
       />
-      <div className="bg-white min-h-fit overflow-hidden absolute z-50 top-1/4 bottom-1/4 left-1/4 right-1/4 py-20 px-20 rounded-3xl min-w-fit">
+      <div className="bg-white min-h-fit overflow-hidden absolute z-50 md:top-1/4 bottom-1/4 md:left-1/4 left-3 md:right-1/4 md:p-20 py-20 px-5 rounded-3xl min-w-fit">
         <button className="absolute top-10 right-10" onClick={onModalClose}>
           <Image src={Close} alt="close Icon" />
         </button>
@@ -20,7 +20,7 @@ export function Modal({ children, heading, onModalClose }: ModalType) {
           src={WeShare}
           alt="Icon"
           height={100}
-          className="absolute bottom-0 right-10 rotate-12 "
+          className="absolute bottom-0 right-10 rotate-12 md:h-20 h-12"
         />
         <Image
           src={Shapes}
