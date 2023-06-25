@@ -1,5 +1,6 @@
 import { Formik, Form, Field } from "formik";
 import { object, string } from "yup";
+import axios from "axios";
 import Modal from "@/components/elements/Modal";
 import { WaitListType, WaitListData } from "./type";
 
@@ -16,6 +17,17 @@ export function WaitList({ handleModalClose }: WaitListType) {
   };
   const onFormSubmit = ({ fullName, email }: WaitListData) => {
     console.log({ fullName, email });
+    axios
+      .post("/api/waitlist", {
+        fullName,
+        email,
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   return (
     <div>
