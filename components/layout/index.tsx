@@ -11,7 +11,8 @@ type LayoutProps = {
 export default function Layout({ header, children, footer }: LayoutProps) {
   const seo = {
     title: "CMFest Africa 23",
-    description: "CMFest website for the festival",
+    description:
+      "A festival for African community leaders, managers, and everyone in between to come together to learn, network, and have conversations around building sustainable communities.   ",
     url: "",
     image: "",
     ogType: "",
