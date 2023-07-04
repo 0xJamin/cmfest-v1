@@ -3,7 +3,6 @@ import {
   useStoryblokState,
   getStoryblokApi,
   StoryblokComponent,
-  ISbStory,
   ISbStoryParams,
   ISbStoryData,
   storyblokEditable,
