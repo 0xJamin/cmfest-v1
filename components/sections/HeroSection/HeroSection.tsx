@@ -18,9 +18,9 @@ const HeroSection = ({ blok }: { blok: HeroType }) => {
   return (
     <section>
       <div className="container-fluid max-w-screen-2xl mx-auto px-5 lg:px-10 mt-10">
-        <div className=" bg-inherit lg:bg-secondary-light rounded-4xl h-full p-4 lg:p-0">
+        <div className=" bg-inherit lg:bg-secondary-light rounded-4xl h-full  lg:p-0">
           <div className="container max-w-screen-xl mx-auto ">
-            <div className="grid grid-cols-7 grid-flow-col gap-4 items-center">
+            <div className="grid grid-cols-7 grid-flow-col gap-4 px-6 items-center">
               <div className="col-span-12 lg:col-span-4 text-center lg:text-left ">
                 <span className="mb-5 lg:mb-0">{label}</span>
                 <h1 className="font-heading text-5xl lg:text-7xl font-bold leading-tight mb-10">

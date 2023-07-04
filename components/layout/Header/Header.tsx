@@ -39,6 +39,7 @@ export function Header({ logo, cta_buttons }: Header) {
             >
               <Link
                 href={cta.url}
+                target="_blank"
                 className="text-white border-white border-2 rounded-full px-6 py-2 text-[14px]"
               >
                 {cta.label}
