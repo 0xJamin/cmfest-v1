@@ -14,7 +14,7 @@ export default function Layout({ header, children, footer }: LayoutProps) {
     description:
       "A festival for African community leaders, managers, and everyone in between to come together to learn, network, and have conversations around building sustainable communities.   ",
     url: "",
-    image: "https://a.storyblok.com/f/228685/3364x1760/79c8f0e492/banner.png",
+    image: "https://a.storyblok.com/f/228685/1682x880/7926e7cfa8/banner.png",
     ogType: "",
   };
   return (
