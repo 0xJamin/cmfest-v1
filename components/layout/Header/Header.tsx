@@ -31,7 +31,7 @@ export function Header({ logo, cta_buttons }: Header) {
           {cta_buttons.map((cta) => (
             <div
               key={cta._uid}
-              className={`md:flex md:items-center md:w-auto pl-10 md:pl-0 mt-2 md:mt-0 md:pb-0 md:pt-0 py-8 absolute md:static bg-primary md:z-auto z-[-1] left-0 w-full transition-all duration-500 ${
+              className={`md:flex md:items-center md:w-auto pl-10 md:pl-0 mt-2 md:mt-0 md:pb-0 md:pt-0 py-8 absolute md:static bg-primary md:z-auto left-0 w-full transition-all duration-500 ${
                 open
                   ? "top-16 border-t border-white md:border-0 opacity-100"
                   : "top-[-490px]"
