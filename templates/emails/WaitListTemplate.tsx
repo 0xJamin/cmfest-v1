@@ -34,8 +34,8 @@ export default function WaitListTemplate({
             <Section className="mt-[32px] p-[25px]">
               <Img
                 src="https://a.storyblok.com/f/228685/2000x2000/16ddb08661/cmfest-logo.png"
-                width="80"
-                height="37"
+                width="100"
+                height="100"
                 alt="CMFest"
                 className="my-0 mx-auto rounded-md"
               />
