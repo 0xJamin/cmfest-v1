@@ -16,15 +16,10 @@ import {
   Text,
 } from "@react-email/components";
 import React from "react";
-import logo from "@/public/logo.svg";
 
 interface EmailProps {
   fullName?: string;
 }
-
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
 
 export default function WaitListTemplate({
   fullName = "John Doe",
@@ -38,11 +33,11 @@ export default function WaitListTemplate({
           <Container className="border border-solid border-[#eaeaea]  rounded-lg pl-[20px] my-[40px] mx-auto w-[600px]">
             <Section className="mt-[32px] p-[25px]">
               <Img
-                src={`${baseUrl}/public/logo.svg`}
-                width="40"
+                src="https://a.storyblok.com/f/228685/2000x2000/16ddb08661/cmfest-logo.png"
+                width="80"
                 height="37"
                 alt="CMFest"
-                className="my-0 mx-auto"
+                className="my-0 mx-auto rounded-md"
               />
             </Section>
             <Heading className="text-black text-[24px] font-normal text-center  my-[30px] mx-0">
@@ -67,7 +62,7 @@ export default function WaitListTemplate({
             </Text>
             <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
             <Text className="text-[#666666] text-[12px] leading-[24px] p-[20px] text-center">
-              copyright @ CMFest 2023 {"  "}
+              copyright© 2023 CMFEST Africa.{"  "}
               <strong>
                 <Link href="https://twitter.com/cmfestafrica"> Twitter</Link> |
               </strong>
