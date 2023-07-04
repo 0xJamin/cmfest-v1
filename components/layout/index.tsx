@@ -3,8 +3,6 @@ import Footer from "./Footer";
 import Seo from "./Seo";
 import Head from "next/head";
 
-import banner from "@/public/images/banner.png";
-
 type LayoutProps = {
   header: Header;
   footer: Footer;
@@ -16,7 +14,7 @@ export default function Layout({ header, children, footer }: LayoutProps) {
     description:
       "A festival for African community leaders, managers, and everyone in between to come together to learn, network, and have conversations around building sustainable communities.   ",
     url: "",
-    image: banner,
+    image: "https://a.storyblok.com/f/228685/3364x1760/79c8f0e492/banner.png",
     ogType: "",
   };
   return (
