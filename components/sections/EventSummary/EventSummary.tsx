@@ -8,7 +8,7 @@ const EventSummary = ({ blok }: { blok: EventSummaryType }) => {
   const { topics, sponsors, summary } = blok;
   return (
     <section className="w-full grid grid-cols-2 grid-rows-3 md:grid-cols-6 md:grid-rows-3 mt-16 h-[800px]">
-      <div className="bg-slate-500 col-start-1 row-start-2 col-span-3 md:col-span-4 md:row-start-1 md:row-span-2 md:overflow-hidden">
+      <div className="col-start-1 row-start-2 col-span-3 md:col-span-4 md:row-start-1 md:row-span-2 md:overflow-hidden">
         <Image
           src={cm8}
           className="object-cover w-full h-full"
@@ -23,14 +23,14 @@ const EventSummary = ({ blok }: { blok: EventSummaryType }) => {
         <p className="text-3xl">10+</p>
         <p className="ml-2 text-xl">Topics</p>
       </div>
-      <div className="md:bg-green-500 md:row-start-2 md:row-span-2 hidden md:grid">
+      <div className="md:row-start-2 md:row-span-2 hidden md:grid">
         <Image
           src={cm6}
           className="object-cover w-full h-full"
           alt="Previous event summary image"
         />
       </div>
-      <div className="md:bg-[#853DE2] md:row-end-3 md:row-span-2 md:overflow-hidden hidden md:grid">
+      <div className="md:row-end-3 md:row-span-2 md:overflow-hidden hidden md:grid">
         <Image
           src={cm1}
           className="object-cover w-full h-full"
@@ -48,4 +48,3 @@ const EventSummary = ({ blok }: { blok: EventSummaryType }) => {
 };
 
 export default EventSummary;
-// md:grid-cols-[minmax(400px,_1fr)_250px_250px]

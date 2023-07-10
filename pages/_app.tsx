@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 
 // import Page from "../templates/Pages";
 import HeroSection from "../components/sections/HeroSection";
-import EventSummary from "@/components/sections/EventSummary";
+import EventSummary from "../components/sections/EventSummary";
 const components = {
   section_hero: HeroSection,
   section_event_summary: EventSummary,

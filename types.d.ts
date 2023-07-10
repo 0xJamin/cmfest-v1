@@ -25,10 +25,10 @@ type HeroType = StoryblokBlok<"section_hero"> & {
   description: string;
   cta_buttons: ElementLinkType[];
 };
-//Storyblok Event Summary Section
-type EventSummaryType = StoryblokBlok<"section_event"> & {
-  sponsors: string;
+//Storyblok EventSummary Section
+type EventSummaryType = StoryblokBlok<"section_event_summary"> & {
   topics: string;
+  sponsors: string;
   summary: string;
 };
 // Storyblok Templates
