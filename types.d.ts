@@ -25,10 +25,16 @@ type HeroType = StoryblokBlok<"section_hero"> & {
   description: string;
   cta_buttons: ElementLinkType[];
 };
+//Storyblok Event Summary Section
+type EventSummaryType = StoryblokBlok<"section_event"> & {
+  sponsors: string;
+  topics: string;
+  summary: string;
+};
 // Storyblok Templates
 type PageTemplate = StoryblokBlok<"page"> & {
   // seo: StoryblokMetaData;
-  body: HeroType[];
+  body: [HeroType | EventSummaryType];
   layout_header: Header[];
   layout_footer: Footer[];
 };
