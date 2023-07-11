@@ -2,9 +2,7 @@
   "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
   "rules": {
     "indent": ["error", 2],
-    "linebreak-style": ["error", 0],
-    // "eslint linebreak-style": ["error", "windows"],
-    // "linebreak-style": ["error", process.platform === "win32" ? "windows" : "unix"],
+    "linebreak-style": "off",
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "react/react-in-jsx-scope": "off"
