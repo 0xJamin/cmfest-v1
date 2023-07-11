@@ -17,11 +17,11 @@ const EventSummary = ({ blok }: { blok: EventSummaryType }) => {
       </div>
       <div className="bg-[#181B36] text-white flex flex-col text-center justify-center md:static">
         <p className="text-3xl">20+</p>
-        <p className="ml-6 text-lg">Sponsors</p>
+        <p className="ml-6 text-lg">{sponsors}</p>
       </div>
       <div className="bg-[#853DE2] col-start-2 row-start-1  md:col-start-6 md:row-start-3 md:row-end-4 text-white flex flex-col text-center justify-center">
         <p className="text-3xl">10+</p>
-        <p className="ml-2 text-xl">Topics</p>
+        <p className="ml-2 text-xl">{topics}</p>
       </div>
       <div className="md:row-start-2 md:row-span-2 hidden md:grid">
         <Image
@@ -39,8 +39,7 @@ const EventSummary = ({ blok }: { blok: EventSummaryType }) => {
       </div>
       <div className="container-fluid bg-[#181B36] col-start-1 col-span-4 flex items-center justify-start">
         <p className="container text-white md:text-2xl max-w-[340px] ml-5 md:ml-auto text-xl md:max-w-[480px] lg:max-w-[690px] mx-auto">
-          20+ Speakers We create interactions within their communities that help
-          people connect and exchange skills and ideas to enrich each other.
+          {summary}
         </p>
       </div>
     </section>
